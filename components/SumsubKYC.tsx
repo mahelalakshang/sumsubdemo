@@ -13,7 +13,7 @@ export default function SumsubKYC() {
         const fetchToken = async () => {
             try {
                 // Pass your actual logged-in user's ID here if you have one
-                const response = await fetch('/api/sumsub/token?userId=my-actual-user-id');
+                const response = await fetch('/api/sumsub/token?userId=my-actual-user-id1');
                 const data = await response.json();
 
                 if (response.ok) {
