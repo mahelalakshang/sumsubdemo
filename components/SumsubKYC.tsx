@@ -13,7 +13,7 @@ export default function SumsubKYC() {
         const fetchToken = async () => {
             try {
                 // Pass your actual logged-in user's ID here if you have one
-                const response = await fetch('/api/sumsub/token?userId=my-actual-user-id1');
+                const response = await fetch('/api/sumsub/token?userId=my-actual-user-id2');
                 const data = await response.json();
 
                 if (response.ok) {
@@ -64,7 +64,7 @@ export default function SumsubKYC() {
 
     // 3. Render the SDK
     return (
-        <div className="max-w-4xl mx-auto p-4 bg-white rounded-xl shadow-sm">
+        <div className="max-w-6xl mx-auto p-8 bg-white rounded-xl shadow-xl">
             <SumsubWebSdk
                 accessToken={token}
                 expirationHandler={expirationHandler}
